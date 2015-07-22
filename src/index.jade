@@ -1,0 +1,104 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title So you think you know your users...
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  style.
+    .lines2 {
+      background-image: url('images/lines2.png')
+    }
+
+    .microfeedback {
+      background-image: url('images/microfeedback.png')
+    }
+
+    .www {
+      background-image: url('images/www.png')
+    }
+
+    .ezproxy {
+      background-image: url('images/ezproxy.png')
+    }
+
+    .journal {
+      background-image: url('images/journal.jpg')
+    }
+
+    .ucelinks {
+      background-image: url('images/ucelinks.png')
+    }
+
+    .print {
+      background-image: url('images/print.jpg')
+    }
+
+    .circulation {
+      background-image: url('images/circdesk.jpg')
+    }
+    
+  body
+
+    article
+
+      section
+        h1 Listening To Users
+
+      section
+        h2 Quiz Time
+
+      section
+        h2 Which line is longer?
+        img(src='images/lines1.png')
+
+      section(style='transition: inherit')
+        h2 Which line is longer?
+        img(src='images/lines2.png')
+
+      section(data-bespoke-backdrop='lines2')
+        small I stole that from 
+          a(href='http://christianheilmann.com/2013/04/19/setting-disruptors-to-stun-keynote-video-and-transcript-now-available/') a 2013 talk by Christian Heilmann
+          | .
+
+      section(data-bespoke-backdrop='microfeedback')
+        h2 Microfeedback
+
+      section
+        h2 What sorts of feedback do we get? 
+      
+      section(data-bespoke-backdrop='www')
+        h3 I can't find something on the site.
+      
+      section(data-bespoke-backdrop='microfeedback')
+        h3 I hate surveys.
+          
+      section(data-bespoke-backdrop='ezproxy')
+        h3 I am having trouble with remote access.
+    
+      section(data-bespoke-backdrop='journal')
+        h3 You don't have the 
+          span(style='font-style: normal') Journal of the Study of Journalistic Studies
+          | ?!?!
+        
+      section(data-bespoke-backdrop='ucelinks')
+        h3 Why do I need 10 clicks to get an article from UC-eLinks?
+
+      section(data-bespoke-backdrop='print')
+        h3 I can't add money to my print card.
+
+      section(data-bespoke-backdrop='circulation')
+        h3 I returned a book but the Library still thinks I have it.
+
+      section
+        h1 Did you notice&hellip;
+
+      section
+        h2 Most of those things weren't about the website.
+
+      section
+        h3 The user experience is about the Library, not (just) the website.
+
+    script(src='build/build.js')
